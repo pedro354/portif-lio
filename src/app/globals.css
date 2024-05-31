@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('./image/wallpaper.jpg')
+}
+
+li{
+  text-align: left;
+}
+
+h2{
+  text-align: center;
+  padding: 1em;
+}
+nav{
+  border-bottom: black;
+}
+main {
+  flex: 1 0 auto;
+}
+.text-dark{
+  text-decoration: none;
+  font-size: 1.3em;
+}
+Image{
+  background-size: contain;
+}
+footer {
+  flex-shrink: 0;
+}
+
+.container {
+  padding: 2em 0;
+}
+
+.container h2 {
+  margin-top: 2em;
+}
+
+.container ul {
+  margin-left: 2rem;
+  list-style-type: none;
+}
+
+.sectionFirst{
+  display: flex;
+}
+
+.sectionSecond{
+  display: flex;
+  justify-content: center;
+}
+
+.skills{
+  display: flex;
+  justify-content: center;
+}
+
