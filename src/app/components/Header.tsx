@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 
 export default async function Header() {
     return ( 
-        <header className="py-1 bg-white" >
+        <header className="py-1" >
             <Container>
                 <nav className="d-flex justify-content-between align-items-center" >
                 <h3 className="mb-0" >Bem vindo ao meu Portifólio!</h3>
