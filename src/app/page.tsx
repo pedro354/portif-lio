@@ -5,29 +5,29 @@ import { Button, Container } from "reactstrap";
 export default function Page() {
 
   return (
-    <Container>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
-
+    <div className="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
     <main className="d-flex flex-column align-items-center">
-      <section className="sectionFirst py-4 m-5 align-items-center col-8 w-full ">
-        <div className="">
-          <h1 className="" >Olá, eu sou o Pedro</h1>
-          <h4>Frontend Developer</h4>
-          <p>Tenho paixão por tecnologia, sempre buscando aprimorar minhas habilidades e criar soluções eficientes e escaláveis. </p>
-          <div className="text-center p-2" >
-            <Button className="btn">Projetos</Button>
-          </div>
+    <Container>
+
+      <section className="sectionFirst col-11 align-items-center w-full text-dark">
+        <div className="container p-5">
+          <h1 className="title" >Olá, eu sou o <span className="name">Pedro</span></h1>
+          <h4 className="subTitle">Frontend Developer</h4>
+          <p className="description">Sou apaixonado por tecnologia e inovação, com um forte interesse em desenvolvimento front-end. Atualmente, estou cursando Engenharia de Software, o que me permite combinar minha formação acadêmica com minha paixão por criar soluções web elegantes e eficientes.</p>
         </div>
-        <div className="container text-center">
+        <div className="d-block" >
           <Image
-            src="/logo.png"
+            src="/aaaa.png"
             width={ 300 }
             height={ 300 }
             alt="logo"
           />
         </div>
       </section>
-      <section className="sectionSecond ">
+    </Container>
+    <Container className="shadow bg-light">
+      <section className="sectionSecond " id="sobre">
         <div className="aboutMe col-8 ">
           <h2 className="aboutMe">Sobre Mim</h2>
           <p>
@@ -52,7 +52,7 @@ export default function Page() {
           </ul>
         </div>
       </section>
-      <section className="sectionFour">
+      <section className="sectionFour" id="projetos">
         <h2>Projetos Recentes</h2>
         <div className="container projects py-4 col-8 d-flex flex-wrap justify-content-evenly">
           <div className="card mb-3 text-center" style={{width:'18rem'}}>
@@ -85,7 +85,19 @@ export default function Page() {
           </div>
         </div>
       </section>
-    </main>
+      <section className="sectionFive">
+        <h2>Contate-me</h2>
+        <div className="container projects py-4 col-8 d-flex flex-wrap justify-content-evenly">
+          <div className="d-flex gap-2">
+        <Button className="bi-github"> GitHub </Button>
+        <Button className="bi-linkedin"> Linkedin </Button>
+        <Button className="bi-instagram"> Instagram </Button>
+
+          </div>
+        </div>
+      </section>
     </Container>
+    </main>
+    </div>
   )
 }

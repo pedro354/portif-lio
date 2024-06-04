@@ -1,19 +1,19 @@
 import Link from "next/link";
-import { Container } from "reactstrap";
 
 export default async function Header() {
     return ( 
-        <header className="py-1" >
-            <Container>
+        <header className="" >
+            <div>
                 <nav className="d-flex justify-content-between align-items-center" >
-                <h3 className="mb-0" >Bem vindo ao meu Portifólio!</h3>
+                <h3 className="mb-0" >Portifolio</h3>
                 <div className="d-flex gap-3">
-                <Link className="text-dark" href="/" >Inicio</Link>
-                <Link className="text-dark" href="/contact">Contato</Link>
-                <Link className="text-dark" href="/contact">Sobre</Link>
+                <Link className="links" href="/" >Inicio</Link>
+                <Link className="links" href="#projetos" >Projetos</Link>
+                <Link className="links" href="#contact">Contato</Link>
+                <Link className="links" href="#sobre">Sobre</Link>
                 </div>
                 </nav>
-            </Container>
+            </div>
         </header>
     )
 }

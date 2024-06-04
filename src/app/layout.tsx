@@ -6,6 +6,8 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Script from "next/script";
+import { Container } from "reactstrap";
+import Link from "next/link";
 const poppins = Poppins({ subsets: ["latin"], weight:['400', '700'] });
 export const metadata: Metadata = {
   title: "Portifólio",
@@ -19,13 +21,15 @@ export default function RootLayout({
 }, ) {
     return (
     <html lang="pt-BR" >
-      <body className={poppins.className} >
-        <div>
+      <body className={poppins.className}>
+          <div className="">
           <Header />
         </div>
+        <Container>
         {children}
-        <Footer />
         <Script src="https://unpkg.com/@popperjs/core@2" />
+        <Script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" />
+        </Container>
       </body>
     </html>
     

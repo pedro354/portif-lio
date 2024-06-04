@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-size: 1rem;
 }
 
 html {
@@ -13,9 +14,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url('/portifolio/public/wallpaper.jpg')
+  background-image: url('/wallpaper.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: calc(100% - 20px) calc(100% - 20px); /* Define largura e altura da imagem */
 }
-
+.a{
+  background-color: black;
+}
 li{
   text-align: left;
 }
@@ -26,13 +32,24 @@ h2{
 }
 nav{
   border-bottom: black;
+  padding: 12px 4em;
+  color: white;
+  background: #260101;
+  margin: 0;
 }
 main {
   flex: 1 0 auto;
 }
-.text-dark{
+
+.links{
   text-decoration: none;
   font-size: 1.3em;
+  color: white;
+  border-bottom: solid transparent;
+}
+.links:hover{
+
+  border-bottom: solid crimson;
 }
 Image{
   background-size: contain;
@@ -68,3 +85,26 @@ footer {
   justify-content: center;
 }
 
+.container2 {
+  background-color: white;
+}
+.title {
+  font-weight: lighter;
+}
+.name {
+  font-weight: bold;
+  font-size: 1em;
+  color: crimson;
+}
+
+.subTitle{
+  color: gray;
+  
+}
+@media (max-width: 576px) {
+  .header{
+    width: 100%;
+    margin: 2em;
+    
+  }
+}
