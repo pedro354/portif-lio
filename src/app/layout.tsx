@@ -22,14 +22,14 @@ export default function RootLayout({
     return (
     <html lang="pt-BR" >
       <body className={poppins.className}>
-          <div className="">
-          <Header />
-        </div>
+          <Header />  
+          <div className="layout">
         <Container>
         {children}
         <Script src="https://unpkg.com/@popperjs/core@2" />
         <Script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" />
         </Container>
+        </div>
       </body>
     </html>
     
