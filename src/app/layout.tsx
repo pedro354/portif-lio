@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 import Script from "next/script";
 import { Container } from "reactstrap";
 import Link from "next/link";
-import Theme from "./components/Theme";
 const poppins = Poppins({ subsets: ["latin"], weight:['400', '700'] });
 export const metadata: Metadata = {
   title: "Portifólio",
