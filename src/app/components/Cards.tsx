@@ -13,7 +13,7 @@ export default function Cards() {
         <CardImg src="/Screenshot 2024-06-18 at 00-28-39 Projeto.png" width={100} height={200} alt="Card image" />
             <CardImgOverlay>
                 <CardTitle className="">Dashboard Estoque</CardTitle>
-                <CardText>Tecnologias usadas: Next.js, css, react</CardText>
+                <CardText>Tecnologias usadas: Next.js, css, React< /CardText>
             <Button className="btn btn-primary" onClick={handleclick} color="primary">Ver Projeto
             </Button>
             </CardImgOverlay>
