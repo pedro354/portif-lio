@@ -28,7 +28,7 @@ export default function Page() {
     </Container>
     <Container className="shadow bg-light subSections col-11 py-5 my-5">
       <section className="m-4">
-          <h2>Sobre Mim</h2>
+          <h2 className="">Sobre Mim</h2>
           <p>
             Sou um desenvolvedor frontend e um pouco de backend, cursando Engenharia de Software. Adoro aprender coisas novas e enfrentar desafios, tenho paixão e vocação por tecnologia.
           </p>
@@ -65,6 +65,7 @@ export default function Page() {
       </section>
     </Container>
     </main>
+    
     </div>
   )
 }
