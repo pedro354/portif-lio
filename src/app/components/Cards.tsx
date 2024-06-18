@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button, Card, CardBody, CardFooter, CardGroup, CardHeader, CardImg, CardImgOverlay, CardSubtitle, CardText, CardTitle, Container } from "reactstrap";
+import { Button, Card, CardBody, CardFooter, CardHeader, CardImg, CardImgOverlay, CardSubtitle, CardText, CardTitle, Container } from "reactstrap";
 function handleclick(){
     window.location.href = 'https://dashboard-estoque.vercel.app';
 }
