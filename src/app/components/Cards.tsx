@@ -39,7 +39,7 @@ export default function Cards() {
 
             </Card>
             <Card tag="a" href="https://black-nextjs-cyan.vercel.app/" target="_blank"  className="bg-dark text-white w-100 card-transition" >
-                <CardImg src="Screenshot 2024-06-18 at 21-56-33 Create Next App.png" width={ 100 } height={ 200 } alt="Card image" />
+                <CardImg src="Screenshot 2024-06-18 at 22-38-14 Create Next App.png" width={ 100 } height={ 200 } alt="Card image" />
                 <CardImgOverlay>
                     <CardTitle>E-Commerce de produtos</CardTitle>
                     <CardText>Tecnologias usadas:
@@ -54,7 +54,7 @@ export default function Cards() {
                 </CardImgOverlay>
             </Card>
             <Card tag="a" href="/" target="_blank"  className="bg-dark text-white w-100 card-transition" >
-                <CardImg src="/Screenshot 2024-06-18 at 21-59-00 Front-End Insights.png" width={ 100 } height={ 200 } alt="Card image" />
+                <CardImg src="/Screenshot 2024-06-18 at 21-59-00 Front-End Insights.png" width={ 200 } height={ 200 } alt="Card image" />
                 <CardImgOverlay>
                     <CardTitle>Newsletter</CardTitle>
                     <CardText>Tecnologias usadas:

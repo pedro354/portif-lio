@@ -354,7 +354,15 @@ span {
     height: auto;
     font-size: small;
     margin: -20px;
+    
   
+  }
+  .card{
+      display: block;
+      margin: 2px;
+  }
+  .card-img-overlay{
+    background-color: #0000003a;
   }
   .card-title {
     font-size: 1.5em;
@@ -364,5 +372,6 @@ span {
   }
   .card-footer{
     font-size: 0.54em;
+    
   }
 }
