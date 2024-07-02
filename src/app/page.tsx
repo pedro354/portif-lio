@@ -4,12 +4,12 @@ import { Button, Container } from "reactstrap";
 import Cards from "./components/Cards";
 
 export default function Page() {
-
+  
   return (
-    <div className="container-fluid ">
+    <div className="">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
     <main className="">
-    <Container>
+    <div>
       <section className="sectionFirst col-11 my-5 d-flex">
         <div>
           <h1 className="title" >Olá, eu sou o <span>Pedro</span></h1>
@@ -25,35 +25,35 @@ export default function Page() {
           />
         </div>
       </section>
-    </Container>
-    <Container className="shadow bg-light subSections col-11 py-5 my-5">
+    </div>
+    <div className="shadow bg-light subSections col-11 py-5 my-5">
       <section className="m-4">
           <h2 className="">Sobre Mim</h2>
-          <p>
+          <p className="paragraph">
             Sou um desenvolvedor frontend e um pouco de backend, cursando Engenharia de Software. Adoro aprender coisas novas e enfrentar desafios, tenho paixão e vocação por tecnologia.
           </p>
       </section>
       <section className="m-4">
         <h2>Minhas Habilidades</h2>
-        <div className="">
+        <div className="containerSkills">
           <ul className="skills">
-            <li><Image className="" src="/html.png" width={ 100 } height={ 80 } alt="Html" title="Html" /></li>
-            <li><Image className="" src="/css.png" width={ 100 } height={ 80 } alt="Css" title="Css" /></li>
-            <li><Image className="" src="/javascript.png" width={ 100 } height={ 80 } alt="Javascript" title="Javascript" /></li>
-            <li><Image className="" src="/bootstrap.png" width={ 100 } height={ 80 } alt="Bootstrap" title="Bootstrap" /></li>
-            <li><Image className="" src="/sass.png" width={ 100 } height={ 80 } alt="Sass" title="Sass" /></li>
-            <li><Image className="" src="/typescript.png" width={ 100 } height={ 80 } alt="Typescript" title="Typescript" /></li>
-            <li><Image className="" src="/react.png" width={ 100 } height={ 80 } alt="React" title="React" /></li>
-            <li><Image className="" src="/nodejs.png" width={ 100 } height={ 80 } alt="Node.js" title="Node.js" /></li>
-            <li><Image className="" src="/nextjs.png" width={ 100 } height={ 80 } alt="Next.js" title="Next.js" /></li>
+            <li><Image className="icone" src="/html.png" width={ 100 } height={ 80 } alt="Html" title="Html" /></li>
+            <li><Image className="icone" src="/css.png" width={ 100 } height={ 80 } alt="Css" title="Css" /></li>
+            <li><Image className="icone" src="/javascript.png" width={ 100 } height={ 80 } alt="Javascript" title="Javascript" /></li>
+            <li><Image className="icone" src="/bootstrap.png" width={ 100 } height={ 80 } alt="Bootstrap" title="Bootstrap" /></li>
+            <li><Image className="icone" src="/sass.png" width={ 100 } height={ 80 } alt="Sass" title="Sass" /></li>
+            <li><Image className="icone" src="/typescript.png" width={ 100 } height={ 80 } alt="Typescript" title="Typescript" /></li>
+            <li><Image className="icone" src="/react.png" width={ 100 } height={ 80 } alt="React" title="React" /></li>
+            <li><Image className="icone" src="/nodejs.png" width={ 100 } height={ 80 } alt="Node.js" title="Node.js" /></li>
+            <li><Image className="icone" src="/nextjs.png" width={ 100 } height={ 80 } alt="Next.js" title="Next.js" /></li>
           </ul>
         </div>
       </section>
       <section className="m-4 ">
         <h2>Projetos Recentes</h2>
-      <Container className="projects ">
+      <div className="projects ">
       <Cards />
-      </Container>
+      </div>
       </section>
       <section className="m-4">
         <h2>Contate-me</h2>
@@ -63,7 +63,7 @@ export default function Page() {
         <Button className="bi-instagram"> Instagram </Button>
         </div>
       </section>
-    </Container>
+    </div>
     </main>
     
     </div>

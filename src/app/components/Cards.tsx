@@ -6,7 +6,7 @@ function getLastUpdate() {
 }
 export default function Cards() {
     return (
-        <Container className="cards">
+        <div className="cards">
             <Card tag="a" href="https://falcon9-murex.vercel.app/" target="_blank"  className="bg-dark text-white w-100 card-transition" >
                 <CardImg src="/Screenshot 2024-06-18 at 00-28-39 Projeto.png" width={ 100 } height={ 200 } alt="Card image" />
                 <CardImgOverlay>
@@ -54,7 +54,7 @@ export default function Cards() {
                 </CardImgOverlay>
             </Card>
             <Card tag="a" href="/" target="_blank"  className="bg-dark text-white w-100 card-transition" >
-                <CardImg src="/Screenshot 2024-06-18 at 21-59-00 Front-End Insights.png" width={ 200 } height={ 200 } alt="Card image" />
+                <CardImg src="/Screenshot 2024-06-18 at 21-59-00 Front-End Insights.png" width={ 100 } height={ 200 } alt="Card image" />
                 <CardImgOverlay>
                     <CardTitle>Newsletter</CardTitle>
                     <CardText>Tecnologias usadas:
@@ -69,6 +69,6 @@ export default function Cards() {
                 </CardImgOverlay>
 
             </Card>
-        </Container>
+        </div>
     )
 }

@@ -2,14 +2,12 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
-import AOS from "aos";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import React from "react";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Script from "next/script";
-import { Container } from "reactstrap";
-import Link from "next/link";
+import DarkMode from "./components/DarkMode";
+import { Button, Tag } from "reactstrap";
 const poppins = Poppins({ subsets: ["latin"], weight:['400', '700'] });
 export const metadata: Metadata = {
   title: "Portifólio",
@@ -26,17 +24,13 @@ export default function RootLayout({
       <head>
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
-      <body className={poppins.className} >
-          {/* <h1>darkmode</h1>
-          <Theme /> */}
-          <Header />  
+      <body className={`${poppins.className}  `} >
+      <Header /> 
           <div className="layout">
-        <Container>
+        <div className="">
         {children}
         <Script src="https://unpkg.com/@popperjs/core@2" />
-        <Script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" />
-        <Script src="https://unpkg.com/aos@next/dist/aos.js" />
-        </Container>
+        </div>
         </div>
       </body>
     </html>

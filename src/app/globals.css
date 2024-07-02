@@ -6,6 +6,7 @@
   --secondary-text-color: aliceblue;
   --toogle-bg: rgb(255, 248, 116);
   --toogle-fg: rgb(218, 180, 42);
+  --color-text: aliceblue
 }
 
 /* Global Styles */
@@ -14,32 +15,85 @@
   font-size: 1rem;
   margin: auto;
 }
-
-body {
-  padding: 0;
-  background-color: aliceblue;
+.btn-color-mode-switch{ width: 3em; height: 1.4em; display: inline-block; background-color:aliceblue; border-radius: 1em; -webkit-border-radius: 1em; -moz-border-radius: 1em; -ms-border-radius: 1em; -o-border-radius: 1em;
+  background-color: transparent;
+  border: solid 1px;
+}
+#darkModeToggle{
+  opacity: 0;
+  width: 110px;
+  position: fixed;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Estilos padrão para o tema claro */
+.is-light {
+  color: #212529;
+  background-color: #f1f5f9;
+}
+
+/* Estilos alternativos para o tema escuro */
+.is-dark {
+  color: #f1f5f9;
+  background-color: #212529;
+}
 /* Icons */
 .bi-moon {
   cursor: pointer;
-  width: 100%;
-  background-color: var(--frontground-color);
+  border: none;
+  position: relative;
+  background-color: transparent;
+
 }
 
 .bi-sun {
   cursor: pointer;
-  width: 100%;
-  background-color: var(--background-color);
-}
-
-/* Themes */
-.theme-dark {
-  background-color: bisque;
-}
-
-.theme-light {
-  background-color: var(--background-color);
+  position: relative;
+  background-color: transparent;
+  border: none;
 }
 
 /* Header Navigation */
@@ -66,15 +120,18 @@ header nav {
 /* Typography */
 h2 {
   padding: 1em;
+  color: var(--primary-text-color);
 }
 
 .link, a {
   gap: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  color: aliceblue;
+  color: var(--color-text);
 }
-
+.paragraph{
+  color: var(--primary-text-color);
+}
 main {
   flex: 1 0 auto;
 }
@@ -82,6 +139,8 @@ main {
 span {
   font-weight: bold;
   font-size: 1em;
+  color: var(--primary-text-color);
+  
 }
 
 .title {
@@ -333,7 +392,6 @@ span {
     gap: 4em;
     align-items: center;
   }
-
   .skills {
     display: flex;
     flex-direction: row;
@@ -341,6 +399,7 @@ span {
     list-style: none;
     justify-content: center;
     padding: 0;
+    gap: 1em;
   }
 
   .btn {
@@ -360,6 +419,7 @@ span {
   .card{
       display: block;
       margin: 2px;
+      width: 100%;
   }
   .card-img-overlay{
     background-color: #0000003a;
