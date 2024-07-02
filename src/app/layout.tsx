@@ -6,8 +6,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import React from "react";
 import Header from "./components/Header";
 import Script from "next/script";
-import DarkMode from "./components/DarkMode";
-import { Button, Tag } from "reactstrap";
 const poppins = Poppins({ subsets: ["latin"], weight:['400', '700'] });
 export const metadata: Metadata = {
   title: "Portifólio",
